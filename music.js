@@ -92,6 +92,10 @@ progres.addEventListener("pointerdown", (e) => {
     scurb(e) 
     isMove = true
 })
+progres.addEventListener("pointerup", ()=> {
+    isMove = false
+    song.muted = false
+})
 
 function changeSliderContext() {
     sliderContext.style.animationName = "opasity"
